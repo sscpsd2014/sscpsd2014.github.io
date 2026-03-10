@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shri Sai Online & Xerox - Pusad</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f2f2f2;
+}
+
+header{
+background:#8B0000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:black;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.news{
+background:yellow;
+padding:10px;
+font-weight:bold;
+text-align:center;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.box{
+background:white;
+border-radius:8px;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
+padding:15px;
+}
+
+.box h3{
+background:#003366;
+color:white;
+padding:10px;
+margin:-15px -15px 10px -15px;
+}
+
+ul{
+padding-left:20px;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+}
+
+button{
+padding:8px;
+margin-top:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Shri Sai Online & Xerox</h1>
+
+<p>Itawa Ward, Pusad</p>
+
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">भरती</a>
+
+<a href="#">प्रवेशपत्र</a>
+
+<a href="#">निकाल</a>
+
+<a href="#">चालू घडामोडी</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+<div class="news">
+
+🔥 Latest Update: पोलीस भरती 2026 | SSC मेगाभरती | रेल्वे भरती | Admit Card | Result
+
+</div>
+
+<div class="container">
+
+<div class="box">
+
+<h3>वर्तमान भरती 2026</h3>
+
+<ul>
+
+<li>महाराष्ट्र पोलीस भरती 2026</li>
+
+<li>SSC GD भरती</li>
+
+<li>रेल्वे ग्रुप D भरती</li>
+
+<li>बँक क्लर्क भरती</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>मेगाभरती</h3>
+
+<ul>
+
+<li>महाराष्ट्र मेगाभरती</li>
+
+<li>शिक्षक भरती</li>
+
+<li>आरोग्य विभाग भरती</li>
+
+<li>वन विभाग भरती</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>प्रवेशपत्र</h3>
+
+<ul>
+
+<li>पोलीस भरती Admit Card</li>
+
+<li>MPSC Admit Card</li>
+
+<li>SSC Admit Card</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>निकाल</h3>
+
+<ul>
+
+<li>पोलीस भरती निकाल</li>
+
+<li>MPSC Result</li>
+
+<li>SSC Result</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>चालू घडामोडी</h3>
+
+<ul>
+
+<li>Daily Current Affairs</li>
+
+<li>स्पर्धा परीक्षा प्रश्न</li>
+
+<li>महत्वाच्या बातम्या</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>वय गणकयंत्र</h3>
+
+<input type="date" id="dob">
+
+<br>
+
+<button onclick="age()">वय मोजा</button>
+
+<p id="result"></p>
+
+</div>
+
+<div class="box">
+
+<h3>संपर्क</h3>
+
+<p>📍 Itawa Ward, Pusad</p>
+
+<p>📞 8605030502</p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Shri Sai Online & Xerox
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918605030502">WhatsApp</a>
+
+<script>
+
+function age(){
+
+let dob=document.getElementById("dob").value;
+
+let birth=new Date(dob);
+
+let today=new Date();
+
+let age=today.getFullYear()-birth.getFullYear();
+
+document.getElementById("result").innerHTML="तुमचे वय: "+age+" वर्ष";
+
+}
+
+</script>
+
+</body>
+</html>
